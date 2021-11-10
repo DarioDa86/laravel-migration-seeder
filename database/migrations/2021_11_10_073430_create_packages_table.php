@@ -18,8 +18,8 @@ class CreatePackagesTable extends Migration
             $table->string("destination", 30);
             $table->date("departures");
             $table->tinyInteger("duration");
-            $table->decimal("price", 5, 2);
-            $table->string("name company", 30);
+            $table->float("price", 6, 2);
+            $table->string("name_company", 30);
             $table->timestamps();
         });
     }
